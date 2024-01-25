@@ -1,0 +1,179 @@
+ header a {
+     color: white!important;
+ }
+ 
+ a {
+     text-decoration: none!important;
+ }
+ .dropdown-menu a:hover {background-color: black;}
+
+ /* login_modal */
+ .inputvalues{
+  	font-size: 20px;
+  	padding: 8px 0;
+  	margin: 8px 0;
+}
+
+.inputvalues input{
+    outline: none;
+	border : none;
+	color: black !important;
+	font-size: 18px;
+    margin : 0 10px;
+  	border-bottom: 1px solid black;
+      background: transparent;
+}
+
+.inputvalues i{
+    margin: auto;
+}
+
+
+
+/* sign up */
+.name div{
+	font-size: 20px;
+  	padding: 8px 0;
+  	margin: 8px 0;
+  	border-bottom: 1px solid black;
+}
+
+.name input{
+    outline: none;
+	border : none;
+    width: 83%;
+	color: black;
+	font-size: 18px;
+    margin : 0 10px;
+}
+
+ /* services */
+ .services{
+    
+    color: white;
+    background: rgb(124, 124, 124);
+    font: weight 400px;
+    font-size: 30px;
+    text-align: left;
+}
+ /* home page */
+ 
+ .circle {
+     width: 125px;
+     height: 125px;
+     border: 2px solid;
+     border-radius: 100%;
+     padding-top: 25px;
+ }
+ 
+ /* footer */
+ 
+ .address {
+     margin-top: 14px !important;
+     margin-left: 10px;
+     text-align: left;
+ }
+ 
+ .address span {
+     color: #7B1FA2
+ }
+ 
+ .icons {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: #fff;
+     display: inline-block;
+     display: flex;
+     justify-content: center;
+     align-items: center
+ }
+ 
+ .icons i {
+     font-size: 20px
+ }
+ 
+ .forms {
+     padding: 20px
+ }
+ 
+ .inputs input {
+     margin-bottom: 13px;
+     border: none;
+     border-bottom: 2px solid #eee
+ }
+ 
+ .inputs input:focus {
+     margin-bottom: 13px;
+     border: none;
+     border-bottom: 2px solid #7B1FA2;
+     box-shadow: none
+ }
+ 
+ .inputs textarea {
+     margin-bottom: 13px;
+     border: none;
+     border-bottom: 2px solid #eee;
+     width: 100%;
+     resize: none
+ }
+ 
+ .inputs textarea:focus {
+     margin-bottom: 13px;
+     border: none;
+     border-bottom: 2px solid #7B1FA2;
+     box-shadow: none;
+     resize: none
+ }
+ 
+ .form-control {
+     padding: .375rem .25rem
+ }
+
+a {
+    text-decoration: none!important;
+}
+
+
+/*aboutus css*/
+
+.block-header {
+    text-align: center;
+  }
+  
+  .block-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .block-subheading {
+    margin-top: 0;
+    margin-bottom: 70px;
+   
+    @media (min-width: 1100px) {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    @media (max-width: 1000px){
+        font-size: 1.125rem;
+        line-height: 1.44;
+        font-weight: 500;
+    }
+  }
+
+  .circle1{
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+}
+  
+  .me-md-3 {
+    margin-right: 1rem!important;
+    margin-left: 1rem!important;
+}
+
+
+
+

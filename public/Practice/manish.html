@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        form div {
+            color: red;
+            font-size: 20px;
+        }
+
+        form input {
+            width: 28%;
+            height: 21px;
+            font-size: 20px;
+            margin: 7px auto;
+        }
+
+        form button {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="text" placeholder="type your name" id="name" onblur="checkErr(this,name)"
+                onkeyup="removeErr(this,name)">
+            <div id="nameErr"></div>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter your 10 digit phone" id="phone" onblur="checkErr(this,phone)"
+                onkeyup="removeErr(this,phone)">
+            <div id="phoneErr"></div>
+        </div>
+        <div>
+            <input type="text" placeholder="type your email" id="email" onblur="checkErr(this,email)"
+                onkeyup="removeErr(this,email)">
+            <div id="emailErr"></div>
+        </div>
+        <div>
+            <input type="password" placeholder="type your password" id="password" onblur="checkErr(this,password)"
+                onkeyup="removeErr(this,password)">
+            <div id="passErr"><span style="color: black;">(have atleast one character,symbol and password)</span>
+            </div>
+        </div>
+        <button onclick="empty()" id="btn">create</button>
+    </form>
+</body>
+<script>
+    let NameErr = document.getElementById("nameErr");
+    let phoneErr = document.getElementById("phoneErr");
+    let emailErr = document.getElementById("emailErr");
+    let passErr = document.getElementById("passErr");
+    let customers;
+
+    checkErr = (input, type) => {
+        let value = input.value;
+        switch (type) {
+            case name:
+                if (value.length == 0) {
+                    NameErr.innerHTML = `please fill this field!`;
+                } else if (!/^[a-zA-Z ]{2,30}$/.test(value)) {
+                    NameErr.innerHTML = `Name should be of 2 or more alphabates!`;
+                }
+                break;
+            case phone:
+                if (!value.length) {
+                    phoneErr.innerHTML = `please fill this field!`;
+                } else if (!/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(value)) {
+                    phoneErr.innerHTML = `Phone no. should be of 10 digits!`;
+                }
+                break;
+            case email:
+                if (!value.length) {
+                    emailErr.innerHTML = `please fill this field!`;
+                } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+                    emailErr.innerHTML = `Wrong Email!`;
+                }
+                break;
+            case password:
+                if (!value.length) {
+                    passErr.innerHTML = `please fill this field!`;
+                } else if (!/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,12}$/.test(value)) {
+                    passErr.innerHTML += ` week passwrd!`;
+                }
+                break;
+        }
+    }
+
+    removeErr = (input, type) => {
+        let value = input.value;
+        switch (type) {
+            case name:
+                if (/^[a-zA-Z ]{2,30}$/.test(value)) {
+                    NameErr.innerHTML = ``;
+                }
+                break;
+            case phone:
+                if (/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(value)) {
+                    phoneErr.innerHTML = ``;
+                }
+                break;
+            case email:
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+                    emailErr.innerHTML = ``;
+                }
+            case password:
+                if (/^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,25}$/.test(value)) {
+                    passErr.innerHTML = ``;
+                }
+        }
+    }
+
+    document.getElementById("btn").addEventListener("click", function (e) {
+        e.preventDefault();
+    })
+
+    empty = () => {
+
+        let valueOfName = document.getElementById("name");
+        let valueOfPhone = document.getElementById("phone");
+        let valueOfEmail = document.getElementById("email");
+        let valueOfPass = document.getElementById("password");
+        checkErr(valueOfName, name);
+        checkErr(valueOfPhone, phone);
+        checkErr(valueOfEmail, email);
+        checkErr(valueOfPass, password);
+        if (NameErr.innerHTML == `` && phoneErr.innerHTML == `` && emailErr.innerHTML == `` && passErr.innerHTML == ``) {
+            customers = {
+                Name: valueOfName.value,
+                "Phone no.": valueOfPhone.value,
+                Email: valueOfEmail.value,
+                Password: valueOfPass.value
+            }
+            console.log(customers);
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,290 @@
+/*
+color codes
+
+primary color: #fff
+seconday color: #ttt
+button primary color:  #aaa
+
+
+*/
+.row{
+    display: flex;
+    
+}
+ul{
+    list-style: none;
+    
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    margin: 50px;
+}
+.footer-col h4{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* contact us */
+
+.first_section {
+    display: block;
+    height: 356px;
+    ;
+}
+
+.map {
+    float: left;
+}
+
+.image {
+    margin: 5px;
+    width: 500px;
+    height: 300px;
+}
+
+.contact h2 {
+    margin-left: 600px;
+}
+
+label {
+    padding: 20px;
+}
+
+
+/* services */
+.services{
+    
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%);
+    font-weight:800;
+    font-size: 50px;
+    font-family: 'PT Serif', serif;
+    text-align: center
+}
+
+.h1 {
+
+    margin: 5%;
+}
+
+.websiteimg{
+    padding: 5px;
+       font: left;
+       height: 250px;
+       width: 550px;
+       margin-left: 1%;
+    
+}
+.website{
+    width: 100%;
+    padding:20px;
+    text-align: justify;
+}
+
+.websitetext{ 
+    font-size: 20px;
+    width: 100%;
+      
+}
+
+
+.h2 {
+    margin: 5%;
+
+}
+.appsimg{
+    padding: 5px;
+       font: left;
+       height: 250px;
+       width: 550px;
+       margin-left: 1%;
+}
+.apps{
+    width: 50%;
+    padding:20px;
+    text-align: justify;
+}
+
+.apps {
+    height: auto;
+    padding: 20px;
+}
+.appstext{
+    font-size: 20px;
+    width: 100%;
+}
+.h3{
+    margin: 5%;
+}
+.seoimg{
+    padding: 5px;
+       font: left;
+       height: 250px;
+       width: 550px;
+       margin-left: 2%;
+}
+.seo{
+    width: 50%;
+    padding:20px;
+    text-align: justify;
+}
+.seotext{
+    font-size: 20px;
+    width: 100%;
+}
+
+
+/* home page */
+
+.first_div {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(-12deg, black 50%, orange 30%);
+    font-size: 100px;
+    font-family: cursive;
+}
+
+.circle {
+    height: 400px;
+}
+
+.circle div {
+    margin: 3% 2%;
+    float: left;
+    width: 29%;
+}
+
+.circle li {
+    list-style-type: none;
+    width: 125px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 100%;
+    padding-top: 25px;
+}
+
+.circle a {
+    color: black;
+}
+
+.circle p {
+    font-family: system-ui;
+}
+
+
+/*aboutus css*/
+
+.about_us {
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 43%, rgba(0, 212, 255, 1) 100%);
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+
+.aboutimg {
+    max-width: 240px;
+    width: 100%;
+    float: left;
+    margin: 2%;
+    margin-left: 200px;
+}
+
+.abouttxt {
+    
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 107, 9, 1) 43%, rgba(0, 212, 255, 1) 100%);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+    margin-left: 0%;
+    padding-top: 100px;
+    height: 320px;
+}
+
+.list_css {
+  
+    background: linear-gradient(90deg, rgba(34, 36, 0, 1) 0%, rgba(9, 121, 110, 1) 77%, rgba(46, 0, 255, 1) 93%);
+    text-align: left;
+    font-weight: 800;
+    padding: 15px;
+    padding-left: 300px;
+}
+#name
+{
+    margin-left: 10px;
+}
+
+/* contact us tab */
+
+section1
+{
+width:90%;
+margin: 43px 16px ;
+display: grid;
+grid-template-rows: 333px  ;
+grid-template-columns: 532px repeat(2,1fr);
+grid-gap: 20px;
+}
+.div1 img
+{
+    border-radius: 10px;
+    height: 333px;
+    width: 532px;
+} 
+.div2
+{
+    border-radius: 10px;
+    background: linear-gradient(118deg, skyblue, grey);
+    text-align: center;
+    color: floralwhite;
+}
+.div3
+{
+    border-radius: 10px;
+    background: linear-gradient(109deg, brown 10%, black 99%);
+    color: floralwhite;
+    text-align: center;
+}
+section2
+{
+    border-radius: 10px;
+    background: linear-gradient(164deg, black, gray,black,gray,black,gray);
+    text-align: center;
+    display: block;
+    
+}
+form
+{
+   padding: 10px; 
+   color:floralwhite;
+}
+label
+{
+    padding-right: 10px;
+}
+input
+{
+    background-color: gray;
+    border-radius: 10px;
+    border-color: black;
+}
+textarea
+{
+    background:gray;
+    /* background-color: gray; */
+    border-radius: 10px;
+    border-color: black;
+}
+button
+{
+    color: floralwhite;
+    background-color: gray;
+    border-radius: 10px;
+    border-color: black;
+}
+
+ 

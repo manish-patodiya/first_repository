@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <form>
+        Name:<input type="text" id="name" onchange="abc(name)">
+        <div id="checkErr"></div>
+
+        email: <input type="text" id="email" onchange="bca(email)">
+        <input type="submit" value="submit" id="button1">
+        <div id="checkErr1"></div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function(event) {
+            event.preventDefault()
+        });
+
+        document.getElementById("button1").addEventListener("click", function(event) {
+            event.preventDefault();
+
+            var obj = {};
+            obj = {
+                "name": "zfasf",
+                "email": "sfsdfds"
+            }
+        });
+
+        function abc(type) {
+            let value = document.getElementById("name").value;
+            switch (type) {
+                case name:
+                    if (value.length < 3) {
+                        document.getElementById("checkErr").innerHTML = "please enter an valid email";
+                    }
+                    if (value != [0 - 9]) {
+                        document.getElementById("checkErr").innerHTML = " use only characters";
+                    }
+                    break;
+            }
+        }
+
+        function bca(type) {
+            let value = document.getElementById("email").value;
+            switch (type) {
+                case email:
+                    if (value.length < 3) {
+                        document.getElementById("checkErr1").innerHTML = "please enter an valid email";
+                    }
+                    break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

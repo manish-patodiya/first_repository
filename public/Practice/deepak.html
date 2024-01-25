@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  <form id="form" onclick="addEventerListener">
+
+        <input type="text" id="fname" placeholder="first name" onkeypress="validated(this,name) "><br>
+        <div id="checkErr"></div>
+        <input type="text" id="phone" placeholder="phoneNo" onchange="validated(this,phone) "><br>
+        <div id="checkErr1"></div>
+        <input type="text" id="email" placeholder="type your email" onchange="validated(this,email) "><br>
+        <div id="checkErr2"></div>
+        <input type="text" id="password" placeholder="type your password" onchange="validated(this,password) "><br>
+        <div id="checkErr3"></div>
+        <input type="submit" value="Resgister">
+    </form> -->
+
+    <script>
+        // document.getElementById("form").addEventerListener("Submit", function (Event) {
+        //     Event.preventDefault()
+
+        // })
+        // function addEventerListener(type, e) {
+        //     e.preventDefault()
+
+        //     let fname = document.getElementById('fname')
+        //     console.log(fname)
+        //     let phone = document.getElementById('phone')
+        //     console.log(email)
+        //     let email = document.getElementById('email')
+        //     console.log(email)
+        // }
+        function validated(input, type) {
+            let a = input.value;
+            switch (type) {
+                case name:
+                    if (!/^[a-zA-Z]+ [a-zA-Z]+$/.test(a)) {
+                        document.getElementById("checkErr").innerHTML = "jsdgfsd";
+                        break;
+                    }
+                case phone:
+                    if (!/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(a)) {
+                        document.getElementById("checkErr1").innerHTML = "jsdgfsd";
+                    }
+                    break
+                case email:
+                    if (!/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(a)) {
+                        document.getElementById("checkErr2").innerHTML = "jsdgfsd";
+                    }
+                    break
+                case password:
+                    if (!    /^[a-zA-Z0-9!@#$%^&*]{6,16}$/.test(a)) {
+                        document.getElementById("checkErr3").innerHTML = "jsdgfsd";
+                    }
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+    //  onfocus onchangeo onblur
+
+        // function focusFunction() {
+        //     document.getElementById("lname");
+        //     console.log("focus");
+        // }
+        // function changeFunction() {
+        //     document.getElementById("lname").style.backgroundColor = "green";
+        //     console.log("change");
+        // }
+        // function blurFunction() {
+        //     document.getElementById("lname").style.backgroundColor = "red";
+        //     console.log("blur");
+        // }
+
+
+        //    keydownFunction keyupFunction keypress
+
+        // function keydownFunction() {
+        //     document.getElementById("fname").style.backgroundColor = "red";
+        //     console.log("keydorw");
+        // }
+        // function keyupFunction() {
+        //     document.getElementById("fname");
+        //     console.log("keypress");
+        // }
+
+        // function keypressFunction() {
+        //     document.getElementById("fname").style.backgroundColor = "green";
+        //     console.log("keypress");
+        // }
+
+
+
+
+
+    </script>
+    <form id="form">
+        <input type="text" id="username" placeholder="type your name"><br>
+
+        <input type="text" id="email" placeholder="type your email"><br>
+
+        <input type="text" id="password" placeholder="type your password"><br>
+
+        <input type="submit" value="register">
+    </form>
+
+
+    <script>
+        let form = document.getElementById("form")
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            let name = document.getElementById("username")
+            console.log("username")
+            let email = document.getElementById("gmail")
+            console.log("email")
+
+            let password = document.getElementById("password")
+            console.log("password")
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>
